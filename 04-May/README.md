@@ -20,3 +20,16 @@ has be equal numbers of N/S and E/W
 | ['w', 's']                                         | false  |
 | ['w', 's', 'e', 's', 's', 'e', 's', 'w', 'n', 'n'] | false  |
 | ['w', 's', 'e', 'e', 'n', 'n', 'e', 's', 'w', 'w'] | true   |
+
+# Feedback
+
+To work on:
+
+- Simplifying my tests, only testing one action per test and if it has to test two actions, is there already a test for one?
+- Clearer naming for functions and variables
+- Always say if you are going to refactor or not
+- Extract methods as soon as possible
+
+To continue:
+
+- Javascript fluency and using MDN when stuck
