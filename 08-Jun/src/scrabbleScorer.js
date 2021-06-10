@@ -5,6 +5,8 @@ function scrabbleScorer(word) {
     return 2;
   } else if (["b", "c", "m", "p"].includes(word)) {
     return 3;
+  } else if (["f", "h", "v", "y", "w"].includes(word)) {
+    return 4;
   }
 }
 
