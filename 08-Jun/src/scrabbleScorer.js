@@ -1,10 +1,13 @@
 function scrabbleScorer(word) {
+  if (word === "" || word === " \t\n" || word === null) {
+    return 0;
+  }
+
   let sum = 0;
+
   let letters = word.split("");
 
   for (let i = 0; i < letters.length; i++) {
-    console.log("sum", sum);
-    console.log(letters[i]);
     if (
       ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"].includes(letters[i])
     ) {

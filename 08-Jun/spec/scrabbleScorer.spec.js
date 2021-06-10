@@ -44,4 +44,14 @@ describe("scrabbleScorer", () => {
   test("it scores 3 for the word 'be' ", () => {
     expect(scrabbleScorer("be")).toEqual(4);
   });
+
+  test("it scores 14 for the word 'cabbage' ", () => {
+    expect(scrabbleScorer("cabbage")).toEqual(14);
+  });
+
+  test("scores 0 for invalid entry' ", () => {
+    expect(scrabbleScorer("")).toEqual(0);
+    expect(scrabbleScorer(" \t\n")).toEqual(0);
+    expect(scrabbleScorer(null)).toEqual(0);
+  });
 });
