@@ -27,21 +27,17 @@ describe("scrabbleScorer", () => {
     expect(scrabbleScorer("y")).toEqual(4);
   });
 
-  // test("it scores 5 for letters aeioulnrst ", () => {
-  //   expect(scrabbleScorer("a")).toEqual(1);
-  //   expect(scrabbleScorer("i")).toEqual(1);
-  //   expect(scrabbleScorer("e")).toEqual(1);
-  // });
+  test("it scores 5 for letter k ", () => {
+    expect(scrabbleScorer("k")).toEqual(5);
+  });
 
-  // test("it scores 8 for letters aeioulnrst ", () => {
-  //   expect(scrabbleScorer("a")).toEqual(1);
-  //   expect(scrabbleScorer("i")).toEqual(1);
-  //   expect(scrabbleScorer("e")).toEqual(1);
-  // });
+  test("it scores 8 for letters jx", () => {
+    expect(scrabbleScorer("j")).toEqual(8);
+    expect(scrabbleScorer("x")).toEqual(8);
+  });
 
-  // test("it scores 10 for letters aeioulnrst ", () => {
-  //   expect(scrabbleScorer("a")).toEqual(1);
-  //   expect(scrabbleScorer("i")).toEqual(1);
-  //   expect(scrabbleScorer("e")).toEqual(1);
-  // });
+  test("it scores 10 for letters qz ", () => {
+    expect(scrabbleScorer("q")).toEqual(10);
+    expect(scrabbleScorer("z")).toEqual(10);
+  });
 });

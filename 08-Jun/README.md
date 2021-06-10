@@ -45,7 +45,7 @@ And to total:
 
 - given a letter, want to see if that letter exists a value in the object and return the key
 
--
+- loop through keys, return key of the value
 
 ## Feedback
 

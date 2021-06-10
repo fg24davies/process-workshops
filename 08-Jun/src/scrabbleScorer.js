@@ -7,7 +7,14 @@ function scrabbleScorer(word) {
     return 3;
   } else if (["f", "h", "v", "y", "w"].includes(word)) {
     return 4;
+  } else if (["k"].includes(word)) {
+    return 5;
+  } else if (["j", "x"].includes(word)) {
+    return 8;
+  } else if (["q", "z"].includes(word)) {
+    return 10;
   }
+  s;
 }
 
 module.exports = scrabbleScorer;
