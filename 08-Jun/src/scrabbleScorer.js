@@ -1,7 +1,7 @@
 function scrabbleScorer(word) {
   if (["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"].includes(word)) {
     return 1;
-  } else if (word === "d") {
+  } else if (["d", "g"].includes(word)) {
     return 2;
   }
 }
