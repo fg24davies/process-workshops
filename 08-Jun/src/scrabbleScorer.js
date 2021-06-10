@@ -3,30 +3,29 @@ function scrabbleScorer(word) {
     return 0;
   }
 
-  let sum = 0;
-
+  let score = 0;
   let letters = word.split("");
 
   for (let i = 0; i < letters.length; i++) {
     if (
       ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"].includes(letters[i])
     ) {
-      sum += 1;
+      score += 1;
     } else if (["d", "g"].includes(letters[i])) {
-      sum += 2;
+      score += 2;
     } else if (["b", "c", "m", "p"].includes(letters[i])) {
-      sum += 3;
+      score += 3;
     } else if (["f", "h", "v", "y", "w"].includes(letters[i])) {
-      sum += 4;
+      score += 4;
     } else if (["k"].includes(letters[i])) {
-      sum += 5;
+      score += 5;
     } else if (["j", "x"].includes(letters[i])) {
-      sum += 8;
+      score += 8;
     } else if (["q", "z"].includes(letters[i])) {
-      sum += 10;
+      score += 10;
     }
   }
-  return sum;
+  return score;
 }
 
 module.exports = scrabbleScorer;
