@@ -40,4 +40,8 @@ describe("scrabbleScorer", () => {
     expect(scrabbleScorer("q")).toEqual(10);
     expect(scrabbleScorer("z")).toEqual(10);
   });
+
+  test("it scores 3 for the word 'be' ", () => {
+    expect(scrabbleScorer("be")).toEqual(4);
+  });
 });
