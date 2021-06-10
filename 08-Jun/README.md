@@ -45,6 +45,16 @@ And to total:
 
 - given a letter, want to see if that letter exists a value in the object and return the key
 
+-
+
 ## Feedback
 
-## Reflection
+To work on:
+
+- Missed committing after one passing test, remember RED GREEN COMMIT REFACTOR GREEN COMMIT
+
+To continue:
+
+- Verbalising my problem solving
+- Using psuedo code
+- Starting with the simplest test
