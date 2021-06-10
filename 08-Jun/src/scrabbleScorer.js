@@ -2,29 +2,38 @@ function scrabbleScorer(word) {
   if (word === "" || word === " \t\n" || word === null) {
     return 0;
   }
+  const letterScores = {
+    a: 1,
+    e: 1,
+    i: 1,
+    o: 1,
+    u: 1,
+    l: 1,
+    n: 1,
+    r: 1,
+    s: 1,
+    t: 1,
+    d: 2,
+    g: 2,
+    b: 3,
+    c: 3,
+    m: 3,
+    p: 3,
+    f: 4,
+    h: 4,
+    v: 4,
+    w: 4,
+    y: 4,
+    k: 5,
+    j: 8,
+    x: 8,
+    q: 10,
+    z: 10,
+  };
 
-  let score = 0;
   let letters = word.split("");
-
-  for (let i = 0; i < letters.length; i++) {
-    if (
-      ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"].includes(letters[i])
-    ) {
-      score += 1;
-    } else if (["d", "g"].includes(letters[i])) {
-      score += 2;
-    } else if (["b", "c", "m", "p"].includes(letters[i])) {
-      score += 3;
-    } else if (["f", "h", "v", "y", "w"].includes(letters[i])) {
-      score += 4;
-    } else if (["k"].includes(letters[i])) {
-      score += 5;
-    } else if (["j", "x"].includes(letters[i])) {
-      score += 8;
-    } else if (["q", "z"].includes(letters[i])) {
-      score += 10;
-    }
-  }
+  const letterPoints = letters.map((letter) => letterScores[letter]);
+  const score = letterPoints.reduce((a, b) => a + b);
   return score;
 }
 

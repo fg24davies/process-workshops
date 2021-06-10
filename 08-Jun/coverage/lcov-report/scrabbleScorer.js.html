@@ -25,28 +25,28 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>22/22</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.74% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>18/19</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>21/21</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
@@ -93,34 +93,50 @@
 <a name='L34'></a><a href='#L34'>34</a>
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L37'></a><a href='#L37'>37</a>
+<a name='L38'></a><a href='#L38'>38</a>
+<a name='L39'></a><a href='#L39'>39</a>
+<a name='L40'></a><a href='#L40'>40</a>
+<a name='L41'></a><a href='#L41'>41</a>
+<a name='L42'></a><a href='#L42'>42</a>
+<a name='L43'></a><a href='#L43'>43</a>
+<a name='L44'></a><a href='#L44'>44</a>
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">21x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">21x</span>
 <span class="cline-any cline-yes">28x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">18x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">21x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -133,31 +149,39 @@
   if (word === "" || word === " \t\n" || word === null) {
     return 0;
   }
-&nbsp;
-  let sum = 0;
+  const letterScores = {
+    a: 1,
+    e: 1,
+    i: 1,
+    o: 1,
+    u: 1,
+    l: 1,
+    n: 1,
+    r: 1,
+    s: 1,
+    t: 1,
+    d: 2,
+    g: 2,
+    b: 3,
+    c: 3,
+    m: 3,
+    p: 3,
+    f: 4,
+    h: 4,
+    v: 4,
+    w: 4,
+    y: 4,
+    k: 5,
+    j: 8,
+    x: 8,
+    q: 10,
+    z: 10,
+  };
 &nbsp;
   let letters = word.split("");
-&nbsp;
-  for (let i = 0; i &lt; letters.length; i++) {
-    if (
-      ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"].includes(letters[i])
-    ) {
-      sum += 1;
-    } else if (["d", "g"].includes(letters[i])) {
-      sum += 2;
-    } else if (["b", "c", "m", "p"].includes(letters[i])) {
-      sum += 3;
-    } else if (["f", "h", "v", "y", "w"].includes(letters[i])) {
-      sum += 4;
-    } else if (["k"].includes(letters[i])) {
-      sum += 5;
-    } else if (["j", "x"].includes(letters[i])) {
-      sum += 8;
-    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (["q", "z"].includes(letters[i])) {
-      sum += 10;
-    }
-  }
-  return sum;
+  const letterPoints = letters.map((letter) =&gt; letterScores[letter]);
+  const score = letterPoints.reduce((a, b) =&gt; a + b);
+  return score;
 }
 &nbsp;
 module.exports = scrabbleScorer;
@@ -172,7 +196,7 @@ module.exports = scrabbleScorer;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Jun 10 2021 11:54:22 GMT+0100 (British Summer Time)
+                at Thu Jun 10 2021 12:05:19 GMT+0100 (British Summer Time)
             </div>
         </div>
         <script src="prettify.js"></script>
