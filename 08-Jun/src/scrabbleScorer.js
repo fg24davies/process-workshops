@@ -38,7 +38,3 @@ function scrabbleScorer(word) {
 }
 
 module.exports = scrabbleScorer;
-
-// if (['a', 'e', 'i', 'o', 'u', 'l', 'n', 'r', 's', 't' ].includes(word)) {
-//   return 1;
-// }
