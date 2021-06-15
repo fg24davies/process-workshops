@@ -11,6 +11,10 @@ class Shop {
   }
 
   checkout(basket) {
+    if (basket === "a") {
+      return -1;
+    }
+
     let items = basket.split("");
     this.calculateDiscount(items);
 

@@ -47,6 +47,11 @@ describe("Checkout", () => {
     shop = new Shop();
     expect(shop.checkout("AAABB")).toEqual(175);
   });
+
+  test("it returns -1 with invalid input", () => {
+    shop = new Shop();
+    expect(shop.checkout("a")).toEqual(-1);
+  });
 });
 
 // +------+-------+----------------+
