@@ -4,6 +4,8 @@ class Shop {
       return 50;
     } else if (shopping === "B") {
       return 30;
+    } else if (shopping === "C") {
+      return 20;
     }
   }
 }
