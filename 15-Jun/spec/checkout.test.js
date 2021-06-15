@@ -37,6 +37,11 @@ describe("Checkout", () => {
     shop = new Shop();
     expect(shop.checkout("AAA")).toEqual(130);
   });
+
+  test("it calcualtes the special offer for BB", () => {
+    shop = new Shop();
+    expect(shop.checkout("BB")).toEqual(45);
+  });
 });
 
 // +------+-------+----------------+

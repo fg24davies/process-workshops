@@ -24,16 +24,21 @@ class Shop {
 
   calculateDiscount(items) {
     let countA = 0;
-    let discountMultiplier;
-    //count B
+    let countB = 0;
 
     for (let i = 0; i < items.length; i++) {
       if (items[i] === "A") {
         countA++;
+      } else if (items[i] === "B") {
+        countB++;
       }
-      discountMultiplier = countA / 3;
-      if (discountMultiplier >= 1) {
-        this.discount = discountMultiplier * 20;
+
+      if (countA % 3 === 0) {
+        this.discount += (countA / 3) * 20;
+      }
+
+      if (countB % 2 === 0) {
+        this.discount += (countB / 2) * 15;
       }
     }
   }
