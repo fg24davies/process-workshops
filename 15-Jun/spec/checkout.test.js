@@ -14,6 +14,10 @@ describe("Checkout", () => {
   test("it returns 20 for C", () => {
     expect(shop.checkout("C")).toEqual(20);
   });
+
+  test("it returns 10 for D", () => {
+    expect(shop.checkout("D")).toEqual(10);
+  });
 });
 
 // +------+-------+----------------+
