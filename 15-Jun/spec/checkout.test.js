@@ -15,8 +15,16 @@ describe("Checkout", () => {
     expect(shop.checkout("C")).toEqual(20);
   });
 
-  test("it returns 10 for D", () => {
-    expect(shop.checkout("D")).toEqual(10);
+  test("it returns 15 for D", () => {
+    expect(shop.checkout("D")).toEqual(15);
+  });
+
+  test("it returns 30 for DD", () => {
+    expect(shop.checkout("DD")).toEqual(30);
+  });
+
+  test("it returns 45 for DDD", () => {
+    expect(shop.checkout("DDD")).toEqual(45);
   });
 });
 

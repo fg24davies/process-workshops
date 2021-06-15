@@ -4,25 +4,16 @@ class Shop {
       A: 50,
       B: 30,
       C: 20,
-      D: 10,
+      D: 15,
     };
 
     let shoppingArray = shopping.split("");
-    return stock[shoppingArray[0]];
 
-    // for(let i = 0; i < shoppingArray.length; i++) {
-
-    // }
-
-    // if (shopping === "A") {
-    //   return 50;
-    // } else if (shopping === "B") {
-    //   return 30;
-    // } else if (shopping === "C") {
-    //   return 20;
-    // } else if (shopping === "D") {
-    //   return 10;
-    // }
+    if (shoppingArray.length === 1) {
+      return stock[shoppingArray[0]];
+    } else {
+      return stock[shoppingArray[0]] + stock[shoppingArray[1]];
+    }
   }
 }
 

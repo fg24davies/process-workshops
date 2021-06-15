@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623751728650" clover="3.2.0">
-  <project timestamp="1623751728650" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="5" coveredelements="5" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
+<coverage generated="1623752163456" clover="3.2.0">
+  <project timestamp="1623752163456" name="All files">
+    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
     <file name="checkout.js" path="/Users/floradavies/Projects/process_workshops/15-Jun/src/checkout.js">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="3" count="4" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="3" count="5" type="stmt"/>
+      <line num="10" count="5" type="stmt"/>
+      <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="13" count="4" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
