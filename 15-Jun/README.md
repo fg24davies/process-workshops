@@ -27,6 +27,7 @@ Where:
 
 param[0] = eg. 'AAB', a String containing the SKUs of all the products in the basket
 @return = eg. 120, an Integer representing the total checkout value of the items
+
 Acceptance Criteria
 shop.checkout('aBc') # => -1
 shop.checkout('-B8x') # => -1
