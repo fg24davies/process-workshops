@@ -7,34 +7,36 @@ class Shop {
       D: 15,
     };
     this.total = 0;
+    this.discount = 0;
   }
 
   checkout(basket) {
     let items = basket.split("");
+    this.calculateDiscount(items);
+
+    //console.log(this.discount);
+
+    for (let i = 0; i < items.length; i++) {
+      this.total += this.priceList[items[i]];
+    }
+    return this.total - this.discount;
+  }
+
+  calculateDiscount(items) {
     let countA = 0;
     let discountMultiplier;
+    //count B
 
     for (let i = 0; i < items.length; i++) {
       if (items[i] === "A") {
         countA++;
       }
       discountMultiplier = countA / 3;
+      if (discountMultiplier >= 1) {
+        this.discount = discountMultiplier * 20;
+      }
     }
-
-    console.log(countA);
-    console.log(discountMultiplier);
-
-    for (let i = 0; i < items.length; i++) {
-      this.total += this.priceList[items[i]];
-    }
-    if (discountMultiplier >= 1) {
-      let discount = discountMultiplier * 20;
-      return this.total - discount;
-    }
-    return this.total;
   }
-
-  deter;
 }
 
 module.exports = Shop;
