@@ -1,6 +1,10 @@
 class Shop {
   checkout(shopping) {
-    return 50;
+    if (shopping === "A") {
+      return 50;
+    } else if (shopping === "B") {
+      return 30;
+    }
   }
 }
 
