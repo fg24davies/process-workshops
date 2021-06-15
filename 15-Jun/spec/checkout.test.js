@@ -33,14 +33,19 @@ describe("Checkout", () => {
     expect(shop.checkout("DDD")).toEqual(45);
   });
 
-  test("it calcualtes the special offer for AAA", () => {
+  test("it calculates the special offer for AAA", () => {
     shop = new Shop();
     expect(shop.checkout("AAA")).toEqual(130);
   });
 
-  test("it calcualtes the special offer for BB", () => {
+  test("it calculatetes the special offer for BB", () => {
     shop = new Shop();
     expect(shop.checkout("BB")).toEqual(45);
+  });
+
+  test("it calculates AAABB", () => {
+    shop = new Shop();
+    expect(shop.checkout("AAABB")).toEqual(175);
   });
 });
 

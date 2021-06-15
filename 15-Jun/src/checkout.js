@@ -14,7 +14,7 @@ class Shop {
     let items = basket.split("");
     this.calculateDiscount(items);
 
-    //console.log(this.discount);
+    console.log(this.discount);
 
     for (let i = 0; i < items.length; i++) {
       this.total += this.priceList[items[i]];
@@ -32,14 +32,14 @@ class Shop {
       } else if (items[i] === "B") {
         countB++;
       }
+    }
 
-      if (countA % 3 === 0) {
-        this.discount += (countA / 3) * 20;
-      }
+    if (countA % 3 === 0) {
+      this.discount += (countA / 3) * 20;
+    }
 
-      if (countB % 2 === 0) {
-        this.discount += (countB / 2) * 15;
-      }
+    if (countB % 2 === 0) {
+      this.discount += (countB / 2) * 15;
     }
   }
 }
