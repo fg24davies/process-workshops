@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1623765312696" clover="3.2.0">
-  <project timestamp="1623765312696" name="All files">
-    <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3" elements="36" coveredelements="36" complexity="0" loc="23" ncloc="23" packages="1" files="1" classes="1"/>
+<coverage generated="1623765971296" clover="3.2.0">
+  <project timestamp="1623765971297" name="All files">
+    <metrics statements="25" coveredstatements="23" conditionals="12" coveredconditionals="10" methods="4" coveredmethods="3" elements="41" coveredelements="36" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
     <file name="checkout.js" path="/Users/floradavies/Projects/process_workshops/15-Jun/src/checkout.js">
-      <metrics statements="23" coveredstatements="23" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
-      <line num="3" count="10" type="stmt"/>
-      <line num="9" count="10" type="stmt"/>
-      <line num="10" count="10" type="stmt"/>
-      <line num="14" count="10" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="18" count="9" type="stmt"/>
-      <line num="19" count="9" type="stmt"/>
+      <metrics statements="25" coveredstatements="23" conditionals="12" coveredconditionals="10" methods="4" coveredmethods="3"/>
+      <line num="3" count="11" type="stmt"/>
+      <line num="9" count="11" type="stmt"/>
+      <line num="10" count="11" type="stmt"/>
+      <line num="16" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="20" count="9" type="stmt"/>
       <line num="21" count="9" type="stmt"/>
       <line num="23" count="9" type="stmt"/>
-      <line num="24" count="19" type="stmt"/>
-      <line num="26" count="9" type="stmt"/>
-      <line num="30" count="9" type="stmt"/>
-      <line num="31" count="9" type="stmt"/>
+      <line num="25" count="9" type="stmt"/>
+      <line num="26" count="19" type="stmt"/>
+      <line num="28" count="9" type="stmt"/>
+      <line num="32" count="9" type="stmt"/>
       <line num="33" count="9" type="stmt"/>
-      <line num="34" count="19" type="cond" truecount="2" falsecount="0"/>
-      <line num="35" count="7" type="stmt"/>
-      <line num="36" count="12" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="5" type="stmt"/>
-      <line num="41" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="42" count="8" type="stmt"/>
-      <line num="45" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="46" count="8" type="stmt"/>
-      <line num="51" count="1" type="stmt"/>
+      <line num="35" count="9" type="stmt"/>
+      <line num="36" count="19" type="cond" truecount="2" falsecount="0"/>
+      <line num="37" count="7" type="stmt"/>
+      <line num="38" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="39" count="5" type="stmt"/>
+      <line num="43" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="8" type="stmt"/>
+      <line num="47" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="8" type="stmt"/>
+      <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="54" count="0" type="stmt"/>
+      <line num="59" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

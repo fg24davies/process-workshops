@@ -11,7 +11,7 @@ class Shop {
   }
 
   checkout(basket) {
-    if (basket === "a") {
+    if (!/[A-Z]/.test(basket)) {
       return -1;
     }
 
