@@ -6,6 +6,7 @@ class Shop {
       C: 20,
       D: 15,
     };
+    this.total = 0;
   }
 
   checkout(basket) {
@@ -23,16 +24,17 @@ class Shop {
     console.log(countA);
     console.log(discountMultiplier);
 
-    let total = 0;
     for (let i = 0; i < items.length; i++) {
-      total += this.priceList[items[i]];
+      this.total += this.priceList[items[i]];
     }
     if (discountMultiplier >= 1) {
       let discount = discountMultiplier * 20;
-      return total - discount;
+      return this.total - discount;
     }
-    return total;
+    return this.total;
   }
+
+  deter;
 }
 
 module.exports = Shop;
